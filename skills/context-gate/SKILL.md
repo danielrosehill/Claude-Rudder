@@ -32,7 +32,7 @@ The skill takes no required arguments. It infers what's relevant from the curren
 
 Default location, in order of preference:
 
-1. If `cwd` is inside a git repo → `<repo-root>/.claude/handovers/handover-<YYYY-MM-DD-HHMM>.md`. Create `.claude/handovers/` if missing.
+1. If `cwd` is inside a git repo → `<repo-root>/planning/handovers/handover-<YYYY-MM-DD-HHMM>.md`. Auto-run `scaffold-planning` first if `planning/` is missing.
 2. Else → `${CLAUDE_USER_DATA:-${XDG_DATA_HOME:-$HOME/.local/share}/claude-plugins}/claude-rudder/handovers/handover-<YYYY-MM-DD-HHMM>.md`.
 
 Use ISO-8601 minute resolution so multiple handovers per day sort cleanly.
