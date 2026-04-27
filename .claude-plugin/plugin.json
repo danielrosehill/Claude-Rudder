@@ -1,7 +1,7 @@
 {
-  "name": "claude-flow",
+  "name": "claude-rudder",
   "version": "2.0.0",
-  "description": "Claude-Flow — a collection of utilities to smoothen out the Claude Code UI/UX. Session handover, terminal helpers, plugin/MCP/workspace primitives, and the canonical user-data storage convention.",
+  "description": "Claude-Rudder — collection of utilities to smoothen the Claude Code UI/UX. Session handover, context-gate workflow, terminal helpers, plugin/MCP/workspace primitives, and the canonical user-data storage convention.",
   "author": {
     "name": "Daniel Rosehill",
     "url": "https://github.com/danielrosehill"

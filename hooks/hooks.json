@@ -1,0 +1,27 @@
+{
+  "description": "Detect CONTEXT.md files at session start and remind to keep CONTEXT.md / CLAUDE.md synchronized after edits.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if [ -f 'CONTEXT.md' ] || [ -f 'context.md' ]; then echo 'CONTEXT.md detected in this repository. This file contains detailed human-authored context about the project. Consider reading it for deeper understanding of the project vision and requirements.'; fi; if [ -d 'context-data' ]; then echo 'context-data/ directory detected. This repository uses chunked context files. Review context-data/README.md for the organization structure.'; fi"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"import json,sys\nd=json.load(sys.stdin)\nfp=d.get('tool_input',{}).get('file_path','')\nif any(p in fp for p in ('CONTEXT.md','context.md','CLAUDE.md','context-data/')):\n    print('Context file modified. Remember to keep CONTEXT.md (human context) and CLAUDE.md (agent briefing) synchronized. Use /context-to-claude or /claude-to-context if needed.')\n\" 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
