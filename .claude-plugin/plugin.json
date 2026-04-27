@@ -1,7 +1,7 @@
 {
-  "name": "meta-tools",
-  "version": "1.2.0",
-  "description": "Claude Code plugin: meta-tooling workflow — context-break evaluation, CLAUDE.md chunking, MCP command generation, and primitive selection. Feedback-filing skills have moved to the Claude-Code-Feedback plugin.",
+  "name": "claude-flow",
+  "version": "2.0.0",
+  "description": "Claude-Flow — a collection of utilities to smoothen out the Claude Code UI/UX. Session handover, terminal helpers, plugin/MCP/workspace primitives, and the canonical user-data storage convention.",
   "author": {
     "name": "Daniel Rosehill",
     "url": "https://github.com/danielrosehill"
