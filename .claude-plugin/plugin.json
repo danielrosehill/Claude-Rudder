@@ -1,6 +1,6 @@
 {
   "name": "claude-rudder",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Claude-Rudder — collection of utilities to smoothen the Claude Code UI/UX. Session handover, context-gate workflow, terminal helpers, plugin/MCP/workspace primitives, and the canonical user-data storage convention.",
   "author": {
     "name": "Daniel Rosehill",
