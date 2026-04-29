@@ -1,12 +1,12 @@
 {
   "name": "claude-rudder",
-  "version": "2.4.1",
-  "description": "Claude-Rudder — collection of utilities to smoothen the Claude Code UI/UX. Session handover, context-gate workflow, terminal helpers, plugin/MCP/workspace primitives, and the canonical user-data storage convention.",
+  "version": "2.5.0",
+  "description": "Claude-Rudder — collection of utilities to smoothen Claude Code UX. Context-gate workflow, log/blocker capture, plugin/MCP primitives, repo & docs spawning, and the canonical user-data storage convention. (Session-hopping skills moved to Claude-Hopper.)",
   "author": {
     "name": "Daniel Rosehill",
     "url": "https://github.com/danielrosehill"
   },
-  "repository": "https://github.com/danielrosehill/Claude-Meta-Tools-Plugin",
+  "repository": "https://github.com/danielrosehill/Claude-Rudder",
   "license": "MIT",
   "keywords": [
     "claude-code",
