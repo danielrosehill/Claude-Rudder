@@ -62,7 +62,7 @@ touch "$repo_root/planning/session-logs/.gitkeep" "$repo_root/planning/handovers
 ```markdown
 # Leftover Tasks
 
-Follow-up work surfaced mid-flow and deliberately deferred. Captured by `claude-rudder:capture-leftover`. Tackled in fresh sessions via `claude-rudder:start-leftover`.
+Follow-up work surfaced mid-flow and deliberately deferred. Captured by `rudder:capture-leftover`. Tackled in fresh sessions via `session-hopper:start-leftover`.
 
 Each entry follows this structure:
 
@@ -85,7 +85,7 @@ Each entry follows this structure:
 ```markdown
 # Blockers
 
-Things preventing progress, ordered by urgency. Captured by `claude-rudder:log-blocker`. Reviewed at session start, cleared individually.
+Things preventing progress, ordered by urgency. Captured by `rudder:log-blocker`. Reviewed at session start, cleared individually.
 
 Each entry follows this structure:
 
@@ -108,7 +108,7 @@ Each entry follows this structure:
 ```markdown
 # Planning Folder
 
-Lightweight planning artifacts for this repo. Read by `claude-rudder` skills.
+Lightweight planning artifacts for this repo. Read by `rudder` skills.
 
 ## Files
 

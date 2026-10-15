@@ -158,7 +158,7 @@ List its plugins and ask the user which one(s) to install. Same scoping caveat a
 
 ### 3c. `mcp-server`
 
-Delegate to `claude-rudder:add-mcp-server` — it already knows how to generate a valid `claude mcp add` invocation. Pass through the repo URL and what you learned (npx invocation, env vars from the README, transport type).
+Delegate to `rudder:add-mcp-server` — it already knows how to generate a valid `claude mcp add` invocation. Pass through the repo URL and what you learned (npx invocation, env vars from the README, transport type).
 
 If the user explicitly wants the MCP server **also** trackable through their marketplace setup (so a fresh machine reconstitutes it), additionally register a stub entry in the third-party marketplace whose `description` documents the MCP add command. This is a workaround until Claude Code marketplaces natively carry MCP entries — be honest about that in the entry's description.
 

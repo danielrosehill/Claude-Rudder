@@ -18,7 +18,7 @@ Long Claude sessions accumulate noise — exploratory tool calls, abandoned appr
 3. **Offer to spawn a fresh session** that opens with the plan as context. Default form: a new terminal at the current working directory with the plan already passed as the first message. Delegate to `new-claude-here` (also in this plugin) with the plan path baked in.
 4. **Confirm the handoff.** Show the plan path and the launch command. The user just approves; they're in a clean session in seconds.
 
-The user types `/claude-rudder:context-gate` once. The orchestration happens behind that one entry point.
+The user types `/rudder:context-gate` once. The orchestration happens behind that one entry point.
 
 ## Inputs
 

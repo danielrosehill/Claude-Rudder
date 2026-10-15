@@ -22,7 +22,7 @@ If a legacy file exists AND `<plugin-data-dir>/references/agent_logs.md` does NO
 
 ## Path resolution
 
-Resolve the plugin's data directory as `$CLAUDE_USER_DATA/dev-tools/` if `CLAUDE_USER_DATA` is set; otherwise `$XDG_DATA_HOME/claude-plugins/dev-tools/` if `XDG_DATA_HOME` is set; otherwise `~/.local/share/claude-plugins/dev-tools/`. Create the directory (and a `references/` subdirectory) if it doesn't exist. See the canonical convention in the `claude-rudder:plugin-data-storage` skill.
+Resolve the plugin's data directory as `$CLAUDE_USER_DATA/dev-tools/` if `CLAUDE_USER_DATA` is set; otherwise `$XDG_DATA_HOME/claude-plugins/dev-tools/` if `XDG_DATA_HOME` is set; otherwise `~/.local/share/claude-plugins/dev-tools/`. Create the directory (and a `references/` subdirectory) if it doesn't exist. See the canonical convention in the `rudder:plugin-data-storage` skill.
 
 ## Procedure
 

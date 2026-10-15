@@ -26,7 +26,7 @@ If the user explicitly says "save to the planning repo" or "central planning rep
 
 ## Configuration
 
-Read central-repo path from `claude-rudder` plugin config per `claude-rudder:plugin-data-storage`:
+Read central-repo path from `rudder` plugin config per `rudder:plugin-data-storage`:
 
 1. Resolve config dir in this priority: `$CLAUDE_USER_DATA` → `$XDG_DATA_HOME/claude-plugins` → `~/.local/share/claude-plugins`.
 2. Read `<config-dir>/claude-rudder/config.json`, key `planning.central_repo` (an absolute path or `~`-prefixed path).

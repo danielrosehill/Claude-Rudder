@@ -92,8 +92,8 @@ Ask the user:
 
 > Which plugin should this skill live in?
 >
-> - **`claude-rudder@danielrosehill`** — if the procedure is about session UX, planning, or Claude Code itself
-> - **<domain plugin>** — if the procedure is domain-specific (e.g., transcription work → `claude-transcription`, op-vault work → `op-vault`, etc.)
+> - **`rudder@danielrosehill`** — if the procedure is about session UX, planning, or Claude Code itself
+> - **<domain plugin>** — if the procedure is domain-specific (e.g., transcription work → `transcription-pipeline`, op-vault work → `op-vault`, etc.)
 > - **In the project repo** at `<repo>/.claude/skills/<name>/SKILL.md` — if the procedure is specific to one repo and shouldn't be globally available
 
 Suggest a default based on the procedure's domain, but **don't auto-pick**. The user often has a preference about scope.
@@ -160,5 +160,5 @@ This skill can be applied to itself: if you find yourself walking through how to
 
 - `new-skill` — forward-design from a description (different input)
 - `log-session` — captures the whole session as a journal entry; this skill captures one *procedure* from it as a reusable thing
-- `claude-rudder:plugin-data-storage` — convention reference for any extracted skill that needs to persist user data
+- `rudder:plugin-data-storage` — convention reference for any extracted skill that needs to persist user data
 - `references/handover-template.md` — same general "single source of truth" pattern at the schema level

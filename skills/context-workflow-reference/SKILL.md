@@ -60,7 +60,7 @@ Read both files side-by-side first — the point is to internalize the differenc
 
 ## Hooks That Support This Workflow
 
-`claude-rudder` ships two hooks (in `hooks/hooks.json`) that reinforce the pattern automatically:
+`rudder` ships two hooks (in `hooks/hooks.json`) that reinforce the pattern automatically:
 
 - **SessionStart**: detects `CONTEXT.md` or `context-data/` and reminds the agent they exist
 - **PostToolUse (Write|Edit)**: when a context file is touched, prompts a reminder to keep the pair in sync
@@ -101,4 +101,4 @@ No setup required — they activate when the plugin is installed.
 
 ## Provenance
 
-This skill folds in the conceptual content of the standalone `Claude-Code-Context-Toolkit` repo. The operational commands from that repo were already present in `claude-rudder`; what's preserved here is the workflow articulation and the worked example.
+This skill folds in the conceptual content of the standalone `Claude-Code-Context-Toolkit` repo. The operational commands from that repo were already present in `rudder`; what's preserved here is the workflow articulation and the worked example.

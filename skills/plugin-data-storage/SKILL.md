@@ -70,7 +70,7 @@ Plugins MAY read (never write) from:
 - `~/.claude/settings.json` — Claude Code settings, for MCP config inspection.
 - `~/.claude/context/` — chunked global context files.
 
-The `user-claude-md` plugin is the only exception that *writes* to `~/.claude/CLAUDE.md` — that's its entire purpose.
+The `user-context-file` plugin is the only exception that *writes* to `~/.claude/CLAUDE.md` — that's its entire purpose.
 
 ## Forbidden patterns
 

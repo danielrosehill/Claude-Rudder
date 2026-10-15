@@ -70,7 +70,7 @@ This plugin consolidates five previously-standalone plugins:
 - `claudemd-chunker`
 - `mcp-command-generator`
 - `what-thing`
-- `claude-code-feedback`
+- `feedback-filer`
 
 ## License
 
