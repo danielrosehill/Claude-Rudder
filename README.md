@@ -25,6 +25,8 @@ This plugin is **primitive-only** — its value is the set of commands and skill
 ### Skills (auto-invoked)
 
 - `context-break-evaluator` — structured criteria for context-break decisions.
+- `document-as-you-go` — sweep the session for durable findings and undocumented changes and file them (canonical text: `danielrosehill/Document-As-You-Go`).
+- `one-handed` — the user is typing one-handed; infer intent from terse or incomplete prompts.
 - `mcp-syntax-reference` — full `claude mcp add` syntax reference (HTTP / SSE / stdio, scopes, auth).
 - `what-thing-pick` / `what-thing-help` / `what-thing-set-context` / `what-thing-refresh-docs` — choose the right Claude Code primitive (skill, subagent, command, plugin, MCP, hook, output style).
 - `feedback-bug` / `feedback-feature-request` / `feedback-model-behavior` / `feedback-docs` / `feedback-refresh-templates` — file well-formed issues against `anthropics/claude-code` using live issue-form templates.

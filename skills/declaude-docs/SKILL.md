@@ -13,12 +13,12 @@ This guide establishes mandatory stylistic, structural, and tonal constraints fo
 
 ### 1. Prohibition of Emojis and Non-Standard Typographical Elements
 
-Maintain a professional, serious, authoritative tone. Emojis, excessive enthusiasm markers, and informal slang are forbidden.
+Maintain a professional, serious, authoritative tone. Emojis, excessive enthusiasm markers, and informal slang are forbidden. The emoji ban covers every output: prose, headings, code comments and filenames.
 
 | Guideline | TO DO | NOT TO DO |
 |---|---|---|
 | Emoji Policy | `The validation failed due to a timeout.` | `The validation failed due to a timeout! ⚠️` |
-| Exclamations | Use period or colon instead. | `Function execution is complete!!!` |
+| Exclamations | Use period or colon instead (exception: genuine urgency in a safety-critical context). | `Function execution is complete!!!` |
 | Slang/Informality | Formal, objective, third-person. | `Make sure you initialize the cool parameters.` |
 
 ### 2. File Naming Conventions
@@ -38,15 +38,17 @@ Only `README.md` conventionally uses all-caps. All other docs use lowercase keba
 - **Contextual Necessity:** Documentation must be requested or demonstrably necessary.
 - **Avoid Boilerplate:** Do not generate `ARCHITECTURE.md`, `GOALS.md`, `ROADMAP.md`, or detailed `INSTALLATION.md` for trivial steps unless asked.
 - **Focus on Maintainers and Users:** Critical context (why) and practical steps (how).
-- **Conciseness:** Prefer integrating brief critical instructions directly into `README.md`.
+- **Conciseness:** Prefer integrating brief critical instructions into an existing file (`README.md` or the relevant source file) over a new file holding one paragraph.
 
 ### 4. Structural Density and Flow (Anti-Fragmentation)
 
 **Heading Constraint:** A subheading must be followed by substantial development (3+ sentences or a complex example) before the next subheading.
 
-**Tables:** Reserved for comparative data, summary statistics, or structured mappings. Do not summarize prose into tables.
+**Avoid topic churn:** do not introduce a concept, summarise it in one bullet and jump to the next heading. Develop it first.
 
-**Lists:** For enumerating steps, assumptions, or distinct items. Not a substitute for paragraph development.
+**Tables:** Reserved for comparative data, summary statistics, or structured mappings. Do not summarize prose into tables, and never add a table that repeats points just made in a list or the headings.
+
+**Lists:** For enumerating steps, assumptions, or distinct items. Not a substitute for paragraph development: if the points are conceptually intertwined, write a paragraph.
 
 Limit nesting to H1–H3 unless the document exceeds 3,000 words.
 
