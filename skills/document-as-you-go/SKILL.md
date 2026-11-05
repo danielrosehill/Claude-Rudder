@@ -49,7 +49,7 @@ Then place each by reach:
 
 Write in-repo documentation without asking. For a new repository, state what you
 found and why it deserves its own home, and create it only once the user agrees —
-**private by default** unless they say otherwise.
+**public by default**; private only if it will hold private content (credentials, personal or client data, private hostnames) or they say so. If you choose private, say so.
 
 Each finding should be usable cold: how the system is reached and authenticated
 (credentials referenced, never pasted), concrete verified request and response
