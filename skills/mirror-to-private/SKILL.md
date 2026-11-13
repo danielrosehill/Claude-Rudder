@@ -5,7 +5,7 @@ description: Create a private GitHub repo that mirrors the current public repo. 
 
 # Mirror Public Repo To Private
 
-Create a private GitHub repository that mirrors the current repo's contents, so Daniel can keep a private working copy alongside the public one.
+Create a private GitHub repository that mirrors the current repo's contents, so the user can keep a private working copy alongside the public one.
 
 ## Steps
 

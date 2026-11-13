@@ -7,6 +7,10 @@ description: Write a comprehensive point-in-time session log into `<repo>/planni
 
 A point-in-time archival record of a working session. Distinct from `handover` and `context-gate` — those are for **immediate continuation** ("next session picks this up soon"). This skill is for **eventual return** ("I might not be back to this for weeks; capture everything").
 
+## 1. Load your settings
+
+Read `log-session.md` from `$CLAUDE_USER_DATA/rudder/`, else `~/.claude-user-data/rudder/`, if it exists; its notes win over the defaults below.
+
 ## When to use this vs handover
 
 | You're about to... | Use |
@@ -146,7 +150,7 @@ Reconstruct from conversation memory:
 
 ### 4. Write the file
 
-Write the full document. Use the user's preferred date format if you've recorded one (Daniel's is DD/MM/YY in display, but filename uses ISO YYYY-MM-DD for sortability).
+Write the full document. Use the user's preferred date format if you've recorded one (filenames always use ISO YYYY-MM-DD for sortability, whatever the display format).
 
 ### 5. Optionally pair with a handover
 

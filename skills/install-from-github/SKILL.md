@@ -15,7 +15,7 @@ Read `install-from-github.md` from `$CLAUDE_USER_DATA/rudder/`, else `~/.claude-
 
 When a repo classifies as `claude-plugin` or `claude-marketplace`:
 
-1. **Skill-Substrate** — if the user runs the substrate (i.e. has the `Skill-Substrate-Admin` plugin installed and the substrate is reachable), register the repo as a marketplace there. Subscriptions are server-side, so the install is reproducible across all the user's hosts without per-host bookkeeping. This is the default for Daniel.
+1. **Skill-Substrate** — if the user runs the substrate (i.e. has the `Skill-Substrate-Admin` plugin installed and the substrate is reachable), register the repo as a marketplace there. Subscriptions are server-side, so the install is reproducible across all the user's hosts without per-host bookkeeping. This is the default when the notes file says so.
 2. **User's primary marketplace** — if the upstream is the user's own work and a primary marketplace exists.
 3. **User's third-party marketplace** — for upstream by others, fork-and-wrap.
 4. **Direct GitHub install** — last resort, only for one-off testing.
@@ -130,7 +130,7 @@ Best case — it's already structured for native install.
      ssh "$SUBSTRATE_HOST" "docker exec skill-substrate-skills-ingester-1 \
        skills install <owner>-<repo>:<plugin-name>"
      ```
-     Use `--authorship third_party` for upstream-by-others (engages the trust gate for review-on-update). Use `--authorship user` only if the upstream is also Daniel's. Prefer calling the `Skill-Substrate-Admin:admin-marketplace-add` and `admin-marketplace-ingest` and `admin-subscribe` skills directly when available.
+     Use `--authorship third_party` for upstream-by-others (engages the trust gate for review-on-update). Use `--authorship user` only if the upstream is also the user's own. Prefer calling the `Skill-Substrate-Admin:admin-marketplace-add` and `admin-marketplace-ingest` and `admin-subscribe` skills directly when available.
    - **Third-party marketplace route (substrate not reachable, or multi-host portability without substrate)** — jump to Step 4 with the existing `plugin.json` as the source of truth.
    - **Direct install from GitHub** (one-off, not tracked anywhere):
      ```bash

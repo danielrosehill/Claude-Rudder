@@ -5,7 +5,7 @@ description: Canonical reference for where Claude Code plugins should persist us
 
 # Plugin User-Data Storage — Canonical Reference
 
-This skill is the authoritative rule for where Daniel-authored Claude Code plugins persist user data. Every plugin's onboarding, preferences, and state-storage logic should follow the convention defined here.
+This skill is the authoritative rule for where user-authored Claude Code plugins persist user data. Every plugin's onboarding, preferences, and state-storage logic should follow the convention defined here.
 
 ## TL;DR
 
