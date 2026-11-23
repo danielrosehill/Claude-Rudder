@@ -158,7 +158,7 @@ After writing, ask once:
 
 > Want to also write a handover (`context-gate`) in case you do come back to this in the next few days?
 
-- If yes → invoke `context-gate`, then update this log's frontmatter `related_handover` to point at the handover file.
+- If yes → invoke `context-gate` (plugin `context-mgmt`), then update this log's frontmatter `related_handover` to point at the handover file.
 - If no (default expectation) → done.
 
 ### 6. Confirm

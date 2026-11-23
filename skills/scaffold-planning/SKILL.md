@@ -117,7 +117,7 @@ Lightweight planning artifacts for this repo. Read by `rudder` skills.
 | `leftover-tasks.md` | Follow-ups surfaced mid-flow, deferred | `capture-leftover` | `start-leftover` |
 | `blockers.md` | Known blockers, ordered by urgency | `log-blocker` | (manual review) |
 | `session-logs/` | Per-session summaries, append-only | (any) | `start-from-handover` may consult |
-| `handovers/` | Frozen handover snapshots | `context-gate`, `handover`, `handover-with-tasks` | `start-from-handover` |
+| `handovers/` | Frozen handover snapshots | `context-gate` (plugin `context-mgmt`), `handover`, `handover-with-tasks` | `start-from-handover` |
 
 ## Coexistence with task-queuer
 

@@ -1,6 +1,6 @@
 # meta-tools
 
-Claude Code plugin: meta-tooling workflow — context-break evaluation, CLAUDE.md chunking, MCP command generation, primitive selection, and claude-code feedback filing, with context-management / mcp-integration / feedback-filing / primitive-selection variants.
+Claude Code plugin: meta-tooling workflow — MCP command generation, primitive selection, and claude-code feedback filing, with context-management / mcp-integration / feedback-filing / primitive-selection variants.
 
 Part of the [danielrosehill Claude Code marketplace](https://github.com/danielrosehill/Claude-Code-Plugins).
 
@@ -10,11 +10,7 @@ This plugin is **primitive-only** — its value is the set of commands and skill
 
 ### Commands (`/meta-tools:<name>`)
 
-**Context management** (from `claudemd-chunker` + `new-turn-hook`):
-
-- `chunk-claude` — prune a bloated `CLAUDE.md` and offload supplementary context to `agent-context/`.
-- `should-i-start-fresh` — evaluate whether the current conversation has accumulated bloat.
-- `context-health-check` — audit the current conversation's context load.
+**Context management** moved to [Context-Mgmt](https://github.com/danielrosehill/Context-Mgmt) (plugin `context-mgmt`) on 2026-11-23.
 
 **MCP integration** (from `mcp-command-generator`):
 
@@ -24,7 +20,6 @@ This plugin is **primitive-only** — its value is the set of commands and skill
 
 ### Skills (auto-invoked)
 
-- `context-break-evaluator` — structured criteria for context-break decisions.
 - `document-as-you-go` — sweep the session for durable findings and undocumented changes and file them (canonical text: `danielrosehill/Document-As-You-Go`).
 - `one-handed` — the user is typing one-handed; infer intent from terse or incomplete prompts.
 - `mcp-syntax-reference` — full `claude mcp add` syntax reference (HTTP / SSE / stdio, scopes, auth).
